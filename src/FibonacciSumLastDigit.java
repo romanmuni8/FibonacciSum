@@ -38,18 +38,7 @@ public class FibonacciSumLastDigit {
             i++;
         }
         int remainder = (int) (n % 60); // how many digits to be added
-        int numberOfSequences = (int) (n/60); // how many group of 60's do we have
 
-        if( numberOfSequences >0){
-            for( int j = 0; j<i;j++){
-                sum = (sum +fib.get(j))%10;
-            }
-
-            for( int j =0; j<numberOfSequences;j++){
-                sum = (sum*2)%10;
-            }
-
-        }
 
         if(remainder>0){
             for(int j =0; j<remainder;j++){
